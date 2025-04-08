@@ -140,3 +140,5 @@ const orderSandwich = (type = "basic") => type === "basic" ? "🥖 + 🥬 + 🍅
 console.log("기본 샌드위치 주문: " + orderSandwich());
 console.log("기본 샌드위치 주문: " + orderSandwich('basic'));
 console.log("비건 샌드위치 주문: " + orderSandwich('vegan'));
+
+console.log("=".repeat(30));
