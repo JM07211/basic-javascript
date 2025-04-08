@@ -151,3 +151,88 @@ console.log("🚀 ~ tue:", tue)
 const students = ["정효진","김재명","이준범","정다운","김현모"];
 const me = students[students.length-1]
 console.log(me)
+
+//학생 정보
+const studnetName = "김재명";
+const studentGender ="Male"
+const studentAttendanceCheck = true;
+
+const studentInfo = {
+    name: "김재명",
+    gender : "male",
+    attendanceCherk : true,
+};
+
+const key = "name"
+console.log(studentInfo.name);
+console.log(studentInfo[key]); // 변수에 key값이 계속 바뀌는 경우 사용
+
+const studentList = [
+    {
+        name : "정효진",
+        gender : "Female",
+        attendanceCherk : true
+    },
+    {
+        name : "김재명",
+        gender : "Male",
+        attendanceCherk : true
+    },
+    {
+        name : "이준범",
+        gender : "Male",
+        attendanceCherk : true
+    },
+    {
+        name : "정다운",
+        gender : "Male",
+        attendanceCherk : true
+    },
+    {
+        name : "김현모",
+        gender : "Male",
+        attendanceCherk : true
+    },
+    {
+        name : "김다솜",
+        gender : "Female",
+        attendanceCherk : true
+    }
+];
+
+console.log(studentList.length)
+console.log(studentList[studentList.length-1].name)
+
+// let i = 0;
+// for (i=0; i < 10; i++) {
+//     console.log (`반복문 ${i}번째 실행`)
+// }
+// console.log("반복문 끝")
+// console.log("i==>",i);
+
+for(let i = 0; i< studentList.length ; i++ ){
+    console.log(`${i+1}번째 학생이름: ${studentList[i].name}`)
+}
+
+studentList.forEach((value, index, array)=>{
+    console.log("🚀 ~ value:", value.name);
+})//for문과 달리 개수 구할 필요 없음, 개발자 직관적임
+
+const studentNames = studentList.map((value)=>value.name)
+console.log("🚀 ~ studentNames:", studentNames)
+
+studentNames.map((value) => value + '')
+
+const h1El = document.querySelector(".title");
+const buttonEl = document.querySelector("button")
+// console.log("🚀 ~ h1El:", h1El)
+
+const changeH1 = () =>{
+    h1El.innerText = "JavaScript";
+    h1El.style.color = "red"
+};
+
+buttonEl.addEventListener("click", changeH1)
+
+
+console.dir(h1El)
