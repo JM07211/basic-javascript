@@ -131,7 +131,6 @@ if(0) {
 // const introduce = (name, age) => {
 //     return '안녕하세요, ' + name + '님. 당신의 나이는 ' + age + '세입니다.';
 //   };
-  
 //   // 여기에 함수를 호출하는 코드를 작성하세요.// 당신의 이름과 나이를 argument로 사용하세요.
 //   console.log(introduce("김재명","25")  );// 예시 결과: "안녕하세요, 김철수님. 당신의 나이는 25세입니다."
 
@@ -142,3 +141,13 @@ console.log("기본 샌드위치 주문: " + orderSandwich('basic'));
 console.log("비건 샌드위치 주문: " + orderSandwich('vegan'));
 
 console.log("=".repeat(30));
+
+const days0fWeek = ["월요일", "화요일", "수요일", "목요일", "금요일", "토요일", "일요일"];
+console.log("🚀 ~ days0fWeek:", days0fWeek)
+
+const tue = days0fWeek[2];
+console.log("🚀 ~ tue:", tue)
+
+const students = ["정효진","김재명","이준범","정다운","김현모"];
+const me = students[students.length-1]
+console.log(me)
